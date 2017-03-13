@@ -41,5 +41,25 @@ namespace Tombola
 
             return ( byte ) ( scelta - 1 );
         }
+
+
+        public byte[] EstraiNNumeri ( int n )
+        {
+            byte[] numeriEstratti = new byte[ n ];
+
+            for ( int i = 0 ; i < numeriEstratti.Length ; i++ )
+            {
+                int scelta = myRand.Next( 0 , numeriCasuali.Count );
+                numeriCasuali.Remove( ( byte ) scelta );
+                numeriEstratti[ i ] = ( byte ) scelta;
+            }
+
+            return numeriEstratti;
+        }
+
+        public void ResetList ()
+        {
+            GeneraArray();
+        }
     }
 }

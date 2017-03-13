@@ -1,37 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
+using Tombola;
 
 namespace TestEstraiNumero
 {
     class Program
     {
-        private static LinkedList<byte> numeriCasuali = GeneraArray();
+
 
         static void Main ( string[] args )
         {
-            numeriCasuali = GeneraArray();
-
-        }
-
-        private static LinkedList<byte> GeneraArray ()
-        {
-            LinkedList<byte> numeri = new LinkedList<byte>();
+            byte scelta;
+            GameUtil gameUtil = new GameUtil();
             for ( int i = 0 ; i < 90 ; i++ )
             {
-                numeri.AddLast( Convert.ToByte( i + 1 ) );
+                scelta = gameUtil.GetNumber();
+                Console.WriteLine( "Ciclo numero: {0} numero estratto {1}" , i , scelta );
             }
 
-            return numeri;
+            Console.ReadLine();
+
+
         }
 
-        private static byte EstraiNumeri ( byte[] casuali )
-        {
-            Random myRand = new Random();
-
-            int scelta = myRand.Next( 0 , numeriCasuali.Count );
-            numeriCasuali.Remove( ( byte ) scelta );
-            return casuali[ scelta - 1 ];
-        }
 
     }
 

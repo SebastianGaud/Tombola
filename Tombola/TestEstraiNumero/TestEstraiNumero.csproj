@@ -49,6 +49,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClockTombola\ClockTombola.csproj">
+      <Project>{efef9b60-5a89-4f7a-b8f0-17eae8c54ea4}</Project>
+      <Name>ClockTombola</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UtilTombola\UtilTombola.csproj">
+      <Project>{f8529bd6-0310-445a-b812-7635ce5ba480}</Project>
+      <Name>UtilTombola</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
