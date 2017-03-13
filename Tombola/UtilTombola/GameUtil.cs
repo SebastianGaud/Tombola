@@ -3,12 +3,18 @@ using System.Collections.Generic;
 
 namespace Tombola
 {
-    class GameController
+    public class GameUtil
     {
 
         private Random myRand = new Random();
-        private static LinkedList<byte> numeriCasuali = GeneraArray();
+        //private static LinkedList<byte> numeriCasuali = GeneraArray();
+        public LinkedList<byte> numeriCasuali { get; private set; }
 
+
+        public GameUtil ()
+        {
+            numeriCasuali = GeneraArray();
+        }
 
         public byte GetNumber ()
         {
