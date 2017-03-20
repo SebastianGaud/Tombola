@@ -1,18 +1,22 @@
-﻿using Tombola;
+﻿using System;
+using Tombola;
 
 namespace Cartellina
 {
-    class CartellinaController
+    public class CartellinaController
     {
         GameUtil gameUtil = new GameUtil();
 
-        private byte[] numeriCartellina;
+        public byte[] NumeriCartellina { get; set; }
+
+        public event Action OnCinquina;
+        public event Action OnTombola;
 
 
         public CartellinaController ()
         {
-            numeriCartellina = new byte[ 15 ];
-            numeriCartellina = gameUtil.EstraiNNumeri( 15 );
+            NumeriCartellina = new byte[ 15 ];
+            NumeriCartellina = gameUtil.EstraiNNumeri( 15 );
         }
 
         public bool Cinquina ( byte[] riga1 , byte[] riga2 , byte[] riga3 )

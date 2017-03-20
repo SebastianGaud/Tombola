@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Tombola
 {
@@ -9,6 +10,9 @@ namespace Tombola
         private Random myRand = new Random();
         //private static LinkedList<byte> numeriCasuali = GeneraArray();
         public LinkedList<byte> numeriCasuali { get; private set; }
+        private int count = 0;
+
+        public event Action OnPartitaTerminata;
 
 
         public GameUtil ()
@@ -24,7 +28,7 @@ namespace Tombola
         private static LinkedList<byte> GeneraArray ()
         {
             LinkedList<byte> numeri = new LinkedList<byte>();
-            for ( int i = 0 ; i < 90 ; i++ )
+            for ( int i = 1 ; i <= 90 ; i++ )
             {
                 numeri.AddLast( Convert.ToByte( i + 1 ) );
             }
@@ -37,9 +41,21 @@ namespace Tombola
             Random myRand = new Random();
 
             int scelta = myRand.Next( 0 , numeriCasuali.Count );
-            numeriCasuali.Remove( ( byte ) scelta );
 
-            return ( byte ) ( scelta - 1 );
+            count++;
+            if ( count == 90 )
+            {
+                OnPartitaTerminata();
+            }
+            else
+            {
+                byte numeroInPosizione = numeriCasuali.ElementAt( scelta );
+                numeriCasuali.Remove( ( byte ) numeroInPosizione );
+
+                return ( byte ) ( numeroInPosizione - 1 );
+            }
+
+            return 0;
         }
 
 
@@ -50,8 +66,9 @@ namespace Tombola
             for ( int i = 0 ; i < numeriEstratti.Length ; i++ )
             {
                 int scelta = myRand.Next( 0 , numeriCasuali.Count );
-                numeriCasuali.Remove( ( byte ) scelta );
-                numeriEstratti[ i ] = ( byte ) scelta;
+                byte numeroInPosizione = numeriCasuali.ElementAt( scelta );
+                numeriCasuali.Remove( ( byte ) numeroInPosizione );
+                numeriEstratti[ i ] = ( byte ) numeroInPosizione;
             }
 
             return numeriEstratti;

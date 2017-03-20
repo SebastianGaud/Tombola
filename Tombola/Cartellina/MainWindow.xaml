@@ -5,6 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cartellina"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid/>
+        Title="MainWindow" Height="503.636" Width="741.364">
+    <Grid Margin="0,0,2,1">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF851F73" Offset="0.413"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="lbl_1" Content="" HorizontalAlignment="Left" Height="60" Margin="94,165,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="INTESTAZIONE" Content="Il gioco della Tombola" HorizontalAlignment="Left" Height="85" Margin="75,23,0,0" VerticalAlignment="Top" Width="584" FontFamily="Viner Hand ITC" FontSize="36" FontWeight="Bold" Background="#00000000" Foreground="#FF259114" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="ULTIMI" Content="Cartella giocatore" HorizontalAlignment="Left" Height="45" Margin="292,102,0,0" VerticalAlignment="Top" Width="165" FontFamily="Tempus Sans ITC" FontWeight="Bold" Background="#00000000" Foreground="#FF259114" FontSize="20" RenderTransformOrigin="0.033,0.297"/>
+        <Button x:Name="btn_Avvio" Content="Crea cartella" HorizontalAlignment="Left" Height="30" Margin="456,393,0,0" VerticalAlignment="Top" Width="187" FontFamily="Tempus Sans ITC" Foreground="#FFA48D23" FontSize="22" FontWeight="Bold" BorderThickness="0" Click="btn_Avvio_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF139C19" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="lbl_1_Copy" Content="" HorizontalAlignment="Left" Height="60" Margin="155,165,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_4" Content="" HorizontalAlignment="Left" Height="60" Margin="216,165,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_1_Copy2" Content="" HorizontalAlignment="Left" Height="60" Margin="277,165,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_7" Content="" HorizontalAlignment="Left" Height="60" Margin="338,165,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_1_Copy4" Content="" HorizontalAlignment="Left" Height="60" Margin="399,165,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_1_Copy5" Content="" HorizontalAlignment="Left" Height="60" Margin="460,165,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_11" Content="" HorizontalAlignment="Left" Height="60" Margin="521,165,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_15" Content="" HorizontalAlignment="Left" Height="60" Margin="582,165,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_2" Content="" HorizontalAlignment="Left" Height="60" Margin="94,227,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_1_Copy9" Content="" HorizontalAlignment="Left" Height="60" Margin="155,227,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_5" Content="" HorizontalAlignment="Left" Height="60" Margin="216,227,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_8" Content="" HorizontalAlignment="Left" Height="60" Margin="277,227,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_1_Copy12" Content="" HorizontalAlignment="Left" Height="60" Margin="338,227,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_1_Copy13" Content="" HorizontalAlignment="Left" Height="60" Margin="399,227,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_10" Content="" HorizontalAlignment="Left" Height="60" Margin="460,227,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_12" Content="" HorizontalAlignment="Left" Height="60" Margin="521,227,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_14" Content="" HorizontalAlignment="Left" Height="60" Margin="582,227,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_3" Content="" HorizontalAlignment="Left" Height="60" Margin="94,288,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_1_Copy18" Content="" HorizontalAlignment="Left" Height="60" Margin="155,288,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_6" Content="" HorizontalAlignment="Left" Height="60" Margin="216,288,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_1_Copy20" Content="" HorizontalAlignment="Left" Height="60" Margin="277,288,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_9" Content="" HorizontalAlignment="Left" Height="60" Margin="338,288,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_1_Copy22" Content="" HorizontalAlignment="Left" Height="60" Margin="399,288,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_1_Copy23" Content="" HorizontalAlignment="Left" Height="60" Margin="460,288,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_1_Copy24" Content="" HorizontalAlignment="Left" Height="60" Margin="521,288,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+        <Label x:Name="lbl_13" Content="" HorizontalAlignment="Left" Height="60" Margin="582,288,0,0" VerticalAlignment="Top" Width="60" FontWeight="Bold" FontFamily="Arial" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFB67CAB"/>
+
+    </Grid>
 </Window>

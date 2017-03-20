@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cartellina", "Cartellina\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilTombola", "UtilTombola\UtilTombola.csproj", "{F8529BD6-0310-445A-B812-7635CE5BA480}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTombola", "TestTombola\TestTombola.csproj", "{8B507E35-9FCE-4FB9-83EF-356A15D0E55E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F8529BD6-0310-445A-B812-7635CE5BA480}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8529BD6-0310-445A-B812-7635CE5BA480}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8529BD6-0310-445A-B812-7635CE5BA480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B507E35-9FCE-4FB9-83EF-356A15D0E55E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B507E35-9FCE-4FB9-83EF-356A15D0E55E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B507E35-9FCE-4FB9-83EF-356A15D0E55E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B507E35-9FCE-4FB9-83EF-356A15D0E55E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

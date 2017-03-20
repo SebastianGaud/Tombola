@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Cartellina
 {
@@ -20,9 +8,30 @@ namespace Cartellina
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        CartellinaController cartellinaController = new CartellinaController();
+
+
         public MainWindow ()
         {
             InitializeComponent();
+            InitializeCartellina();
+        }
+
+        private void InitializeCartellina ()
+        {
+            for ( int i = 0 ; i < cartellinaController.NumeriCartellina.Length ; i++ )
+            {
+                Label foundLabel = FindName( "lbl_" + ( i + 1 ).ToString() ) as Label;
+                foundLabel.Content = cartellinaController.NumeriCartellina[ i ].ToString();
+                //foundLabel.Background = Brushes.Brown;
+            }
+        }
+
+        private void btn_Avvio_Click ( object sender , RoutedEventArgs e )
+        {
+            InitializeCartellina();
+
         }
     }
 }
